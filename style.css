@@ -222,9 +222,84 @@ ul {
 }
 .service-grid {
   margin: 40px 0px 150px;
+  column-gap: 28px;
+  row-gap: 42px;
 }
 .service-grid-img {
   width: 100%;
 }
+.service-img-content {
+  margin-top: -60px;
+  padding: 0px 25px;
+  justify-content: space-between;
+}
+.service-grid-txt {
+  font-family: "Noto Serif HK", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
 .service-grid-btn {
+  display: flex;
+  place-content: center;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: inherit;
+  transition: all 0.3s;
+}
+.service-grid-btn:hover {
+  background-color: #44a1a8;
+  color: #fff;
+  transform: scale(1.1);
+}
+.service-card {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #176478;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.service-card-content {
+  padding: 68px 0px 0px 80px;
+  flex-direction: column;
+}
+.service-card-title,
+.service-card-txt {
+  color: #fff;
+}
+.service-card-txt {
+  font-size: 20px;
+  max-width: 488px;
+  margin: 16px 0px 42px;
+  line-height: 1.3;
+}
+.service-card-txt > span {
+  color: #44a1a8;
+}
+.service-card-btn {
+  background-color: #fff;
+  color: #176478;
+  font-weight: 500;
+}
+.service-med-img {
+  align-self: end;
+}
+.service-card-img {
+  align-self: stretch;
+}
+/* ///////////////////// Testimonials Section //////////////////////////// */
+.testimonials {
+  padding: 150px 0px 130px;
+}
+.test-container {
+  max-width: 1130px;
+  margin: 0 auto;
+  text-align: center;
+}
+.test-title {
+  margin: 16px 0px;
+}
+.test-txt {
+  font-size: 18px;
 }
