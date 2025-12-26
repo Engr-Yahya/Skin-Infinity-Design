@@ -303,3 +303,32 @@ ul {
 .test-txt {
   font-size: 18px;
 }
+.clients {
+  margin: 50px 0px 40px;
+  gap: 25px;
+}
+.client-card {
+  text-align: start;
+}
+.client-info {
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.client-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+.date {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.client-card-detail {
+  margin-top: 10px;
+  max-width: 360px;
+  line-height: 1.5;
+}
+.test-btn {
+  margin: 0 auto;
+}
+/* ///////////////////// Our Offer Section //////////////////////////// */
