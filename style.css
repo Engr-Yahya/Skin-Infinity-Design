@@ -332,3 +332,15 @@ ul {
   margin: 0 auto;
 }
 /* ///////////////////// Our Offer Section //////////////////////////// */
+.our-offer {
+  background-color: rgba(68, 161, 168, 0.13);
+  padding: 110px 0px;
+}
+.offer-container {
+  padding: 80px 72px 80px 156px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+.offer-title {
+  margin-bottom: 40px;
+}
