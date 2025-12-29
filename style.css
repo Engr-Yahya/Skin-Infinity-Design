@@ -47,8 +47,20 @@ ul {
   margin: 0 auto;
 }
 .page-hero-content {
+  color: #fff;
   max-width: 744px;
   margin: 0 auto;
+  padding: 180px 0px 200px;
+  text-align: center;
+}
+.page-title {
+  font-size: 52px;
+  font-family: "Hepta Slab", sans-serif;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.page-detail {
+  font-size: 20px;
 }
 .flex {
   display: flex;
@@ -415,4 +427,100 @@ ul {
   align-items: center;
   gap: 10px;
   font-size: 26px;
+}
+/* ///////////////////// About Us Page ///////////////////////////// */
+.page-section {
+  background-image: url(/assets/png/Page-hero-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.Aboutus-content,
+.master-content {
+  max-width: 865px;
+  padding: 160px 0px 120px;
+}
+.About-experience .experience-card {
+  padding: 42px 50px;
+}
+.About-experience .experience-title {
+  margin: 0px 0px 20px;
+}
+.About-experience .experience-detail {
+  margin: 0px;
+}
+.ourteam {
+  background-color: #e6fdff;
+  padding: 100px 0px;
+  text-align: center;
+}
+.ourteam-txt {
+  max-width: 610px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px auto 60px;
+}
+.ourteam-flex {
+  justify-content: space-between;
+}
+.ourteam-img1 {
+  background-image: url(/assets/png/ourteam-img1.png);
+}
+.ourteam-img2 {
+  background-image: url(/assets/png/ourteam-img2.png);
+}
+.ourteam-img1,
+.ourteam-img2 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 630px;
+  width: 550px;
+  display: flex;
+  align-items: end;
+}
+.ourteam-img-content {
+  padding: 0px 32px 36px 37px;
+  text-align: start;
+  justify-content: space-between;
+  color: #fff;
+  flex: 1;
+}
+.ourteam-img-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.ourteam-img-rank {
+  font-size: 24px;
+  font-weight: 400;
+}
+.ourteam-img-icons {
+  flex-direction: column;
+  gap: 10px;
+}
+.certification {
+  max-width: 930px;
+  margin: 150px auto;
+  text-align: center;
+}
+.certification-txt {
+  max-width: 610px;
+  margin: 20px auto 0px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.certification-logos {
+  margin-top: 60px;
+  justify-content: space-between;
+}
+/* ///////////////////// Master Classes Page ///////////////////////////// */
+.training {
+  margin: 135px auto 155px;
+}
+.training-txt {
+  margin: 20px 0px 30px;
+  font-size: 18px;
+  max-width: 475px;
+  line-height: 1.5;
 }
