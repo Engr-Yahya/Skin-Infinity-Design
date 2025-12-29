@@ -46,22 +46,6 @@ ul {
   max-width: 1130px;
   margin: 0 auto;
 }
-.page-hero-content {
-  color: #fff;
-  max-width: 744px;
-  margin: 0 auto;
-  padding: 180px 0px 200px;
-  text-align: center;
-}
-.page-title {
-  font-size: 52px;
-  font-family: "Hepta Slab", sans-serif;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-.page-detail {
-  font-size: 20px;
-}
 .flex {
   display: flex;
   align-items: center;
@@ -92,6 +76,54 @@ ul {
   font-size: 36px;
   font-weight: 600;
 }
+/* ///////////////////// Common-pages Css //////////////////////////// */
+.page-hero-content {
+  color: #fff;
+  max-width: 744px;
+  margin: 0 auto;
+  padding: 180px 0px 200px;
+  text-align: center;
+}
+.page-title {
+  font-size: 52px;
+  font-family: "Hepta Slab", sans-serif;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.page-detail {
+  font-size: 20px;
+}
+.page-common-txt {
+  max-width: 520px;
+  margin: 30px 0px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+/* ///////////////////// Header Css //////////////////////////// */
+header {
+  background-color: #176478;
+}
+.header-content {
+  padding-top: 18px;
+  justify-content: space-between;
+}
+.header-ul {
+  gap: 32px;
+}
+.header-li > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600px;
+}
+.header-li > a:hover {
+  color: #44a1a8;
+}
+.header-btn {
+  background-color: #fff;
+  color: inherit;
+  font-weight: 600;
+}
+
 /* ///////////////////// Hero Section //////////////////////////// */
 .hero {
   background-color: #176478;
