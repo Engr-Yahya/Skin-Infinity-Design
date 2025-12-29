@@ -517,10 +517,22 @@ ul {
 /* ///////////////////// Master Classes Page ///////////////////////////// */
 .training {
   margin: 135px auto 155px;
+  justify-content: space-between;
 }
 .training-txt {
   margin: 20px 0px 30px;
   font-size: 18px;
   max-width: 475px;
   line-height: 1.5;
+}
+.training-list {
+  font-size: 20px;
+  color: #176478;
+  margin-bottom: 14px;
+}
+.training-content > ul > li {
+  line-height: 1.5;
+}
+.training-svg {
+  margin-right: 8px;
 }
