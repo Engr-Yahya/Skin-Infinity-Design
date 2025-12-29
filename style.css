@@ -46,6 +46,10 @@ ul {
   max-width: 1130px;
   margin: 0 auto;
 }
+.page-hero-content {
+  max-width: 744px;
+  margin: 0 auto;
+}
 .flex {
   display: flex;
   align-items: center;
@@ -150,6 +154,8 @@ ul {
 }
 .about-flex-card-item1,
 .about-flex-card-item2 {
+  height: 400px;
+  width: calc(50.5% - 20px);
   align-items: start;
   background-color: #44a1a8;
   text-align: start;
@@ -175,7 +181,10 @@ ul {
 }
 .about-flex-img-1,
 .about-flex-img-2 {
-  margin-left: -70px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* margin-left: -70px; */
 }
 .about-flex-img-2 {
   z-index: 1;
@@ -363,4 +372,47 @@ ul {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
+}
+.newsletter {
+  background-color: #e9fdff;
+  padding: 110px 0px;
+}
+.newsletter-flex {
+  justify-content: space-between;
+}
+.newsletter-content > input {
+  background-color: rgba(167, 237, 255, 0.2);
+  margin-right: 10px;
+  width: 100%;
+  max-width: 300px;
+  padding: 17px 0px 17px 22px;
+  border: 1px solid rgba(68, 161, 168, 0.3);
+  border-radius: 12px;
+}
+.newsletter-content > input:focus-visible {
+  outline: none;
+}
+.newsletter-content > input::placeholder {
+  color: #878787;
+  font-size: 14px;
+}
+
+.newsletter-title {
+  max-width: 460px;
+  margin: 8px 0px 38px;
+}
+.news-btn {
+  display: inline;
+}
+.community-txt {
+  font-family: "Noto Serif HK", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.community-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
 }
