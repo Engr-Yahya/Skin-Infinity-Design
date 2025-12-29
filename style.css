@@ -42,6 +42,10 @@ ul {
   max-width: 1260px;
   margin: 0 auto;
 }
+.width-container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
 .flex {
   display: flex;
   align-items: center;
@@ -207,7 +211,6 @@ ul {
 }
 /* ///////////////////// Services Section //////////////////////////// */
 .services {
-  max-width: 1130px;
   margin: 130px auto 150px;
   text-align: center;
 }
@@ -293,8 +296,6 @@ ul {
   padding: 150px 0px 130px;
 }
 .test-container {
-  max-width: 1130px;
-  margin: 0 auto;
   text-align: center;
 }
 .test-title {
@@ -343,4 +344,23 @@ ul {
 }
 .offer-title {
   margin-bottom: 40px;
+}
+/* ///////////////////// FAQ'S Section //////////////////////////// */
+.experience {
+  max-width: 1130px;
+  margin: 150px auto;
+}
+.experience-card {
+  margin-left: -185px;
+  background-color: #e7f3f4;
+  border-radius: 24px;
+  padding: 75px;
+}
+.experience-title {
+  margin: 8px 0px 25px;
+}
+.experience-detail {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
