@@ -36,14 +36,17 @@ ul {
 }
 /* ///////////////////// General Css //////////////////////////// */
 .container {
+  padding: 0px 16px;
   max-width: 1440px;
   margin: 0 auto;
 }
 .content-container {
+  padding: 0px 16px;
   max-width: 1260px;
   margin: 0 auto;
 }
 .width-container {
+  padding: 0px 16px;
   max-width: 1130px;
   margin: 0 auto;
 }
@@ -88,9 +91,9 @@ ul {
 }
 .page-hero-content {
   color: #fff;
-  max-width: 744px;
+  max-width: 762px;
   margin: 0 auto;
-  padding: 251px 0px 200px;
+  padding: 251px 16px 200px;
   text-align: center;
 }
 .page-title {
@@ -130,7 +133,7 @@ ul {
   max-width: 170px;
 }
 .price-flex > p {
-  max-width: 150px;
+  max-width: 135px;
 }
 .page-flex-svg {
   width: fit-content;
@@ -170,11 +173,11 @@ ul {
 }
 .consultation {
   background-color: #e6fdff;
-  position: relative;
 }
 .common-consultation {
-  padding: 100px 0px;
+  padding: 100px 20px;
   justify-content: space-between;
+  position: relative;
 }
 .consultation-content {
   max-width: 455px;
@@ -185,21 +188,20 @@ ul {
 }
 .consultation-img {
   position: absolute;
-  right: 20%;
+  right: 0;
   bottom: 0;
 }
 /* ///////////////////// Header Css //////////////////////////// */
 .header-content {
-  padding-top: 18px;
+  padding: 18px 20px 0px;
   justify-content: space-between;
 }
 .header-ul {
   gap: 32px;
 }
 .header-li > a {
-  color: #fff;
   text-transform: uppercase;
-  font-weight: 600px;
+  font-weight: 500;
 }
 .header-li > a:hover {
   color: #44a1a8;
@@ -209,7 +211,9 @@ ul {
   color: inherit;
   font-weight: 600;
 }
-
+.hamburger-menu {
+  display: none;
+}
 /* ///////////////////// Hero Section //////////////////////////// */
 .hero {
   margin-top: -71px;
@@ -616,7 +620,7 @@ footer {
 }
 .copyright-flex {
   justify-content: space-between;
-  padding: 24px 0px 52px;
+  padding: 24px 16px 52px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 .copyright-logo {
@@ -722,4 +726,237 @@ footer {
 }
 .training-svg {
   margin-right: 8px;
+}
+/* ///////////////////// Master Classes Page ///////////////////////////// */
+@media only screen and (max-width: 1200px) {
+  .header-img {
+    width: 200px;
+  }
+  .header-li > a {
+    font-size: 14px;
+  }
+  .header-btn {
+    font-size: 12px;
+    /* padding: 10px 20px; */
+  }
+  .footer ul li a,
+  .footer span,
+  .copyright ul li a {
+    font-size: 16px;
+  }
+  .our-timings span::after {
+    width: 280px;
+  }
+  .page-common-title {
+    font-size: 30px;
+  }
+  .page-common-txt {
+    font-size: 18px;
+    max-width: 415px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header-img {
+    width: 150px;
+  }
+  .header-li > a {
+    font-size: 12px;
+  }
+  .header-ul {
+    gap: 28px;
+  }
+  .header-btn {
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+  .page-title {
+    font-size: 48px;
+  }
+  .page-detail {
+    font-size: 18px;
+  }
+  .page-common-container {
+    gap: 10px;
+  }
+  .page-common-img {
+    width: clamp(280px, 50vw, 520px);
+  }
+  .duration-flex p,
+  .price-flex p {
+    font-size: 14px;
+  }
+  .consultation-title,
+  .page-common-title {
+    font-size: 28px;
+  }
+  .test-txt {
+    font-size: 16px;
+  }
+  .client-name {
+    font-size: 24px;
+  }
+  .consultation-txt {
+    font-size: 18px;
+  }
+  .consultation-img {
+    width: 500px;
+  }
+  .common-page-testimonials {
+    padding: 150px 0px 140px !important;
+  }
+  .footer-flex-item {
+    padding: 0px 20px;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .copyright-content {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  header nav {
+    display: none;
+  }
+  .header-btn {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .page-detail {
+    max-width: 594px;
+    margin: 0 auto;
+  }
+  .page-common-title {
+    font-size: 24px;
+  }
+  .page-common-txt {
+    font-size: 16px;
+  }
+  .page-flex-btn {
+    font-size: 14px;
+  }
+  .test-title {
+    font-size: 30px;
+  }
+  .test-txt {
+    font-size: 16px;
+  }
+  .client-img {
+    width: 50px;
+  }
+  .client-name {
+    font-size: 18px;
+  }
+  .date {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .common-consultation {
+    padding: 0px 20px;
+  }
+  .consultation-img {
+    width: clamp(280px, 50vw, 520px);
+    position: unset;
+    margin-top: -74px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-title {
+    font-size: 38px;
+  }
+  .page-detail {
+    font-size: 15px;
+  }
+  .common-card-flex {
+    display: grid;
+    row-gap: 28px;
+  }
+  .common-card-txt {
+    margin: 20px auto 0;
+  }
+  .page-common-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .page-common-title {
+    font-size: 36px;
+  }
+  .page-common-txt {
+    font-size: 20px;
+    max-width: 100%;
+  }
+  .page-common-img {
+    width: 100%;
+  }
+  .page-flex {
+    justify-content: start;
+    gap: 40px;
+  }
+  .clients {
+    flex-direction: column;
+    align-items: start;
+  }
+  .client-img {
+    width: 64px;
+  }
+  .client-name {
+    font-size: 22px;
+  }
+  .date {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .client-card-detail {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .test-btn {
+    font-size: 12px;
+  }
+  .consultation-title {
+    font-size: 20px;
+  }
+  .consultation-txt {
+    font-size: 15px;
+    margin: 20px 0px;
+  }
+  .consultation-btn {
+    font-size: 12px;
+  }
+  .copyright-content {
+    font-size: 12px;
+  }
+  .copyright-logo {
+    gap: 0px;
+  }
+  .copyright-svg {
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .page-title {
+    font-size: 28px;
+  }
+  .page-detail {
+    font-size: 14px;
+    max-width: 400px;
+  }
+  .page-common-title {
+    font-size: 26px;
+  }
+  .page-common-txt {
+    font-size: 16px;
+  }
+  .common-consultation {
+    padding-top: 40px;
+    align-items: start;
+    flex-direction: column;
+  }
+  .consultation-img {
+    align-self: center;
+    margin-top: 0px;
+  }
 }

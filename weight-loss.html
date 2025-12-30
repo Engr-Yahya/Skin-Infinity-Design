@@ -30,21 +30,31 @@
   <header>
     <div class="header-content container flex">
       <img class="header-img" src="./assets/png/header-img.png" alt="Skinfinity Asthetics" />
-      <ul class="header-ul flex">
-        <li class="header-li"><a href="#">Home</a></li>
-        <li class="header-li"><a href="/about-us.html">About Us</a></li>
-        <li class="header-li"><a href="#">Services
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.22532 8.33753L0.977857 4.09005C0.773006 3.8852 0.773006 3.55308 0.977857 3.34825L1.47326 2.85285C1.67776 2.64835 2.00919 2.64796 2.21418 2.85198L5.59622 6.21818L8.97825 2.85198C9.18323 2.64796 9.51467 2.64835 9.71917 2.85285L10.2146 3.34825C10.4194 3.5531 10.4194 3.88522 10.2146 4.09005L5.96713 8.33753C5.76228 8.54236 5.43017 8.54236 5.22532 8.33753Z"
-                fill="white" />
-            </svg></a>
-        </li>
-        <li class="header-li"><a href="/master-classes.html">online matserclasses</a></li>
-        <li class="header-li"><a href="#">gallery</a></li>
-        <li class="header-li"><a href="#">faqs</a></li>
-      </ul>
+      <nav>
+        <ul class="header-ul flex">
+          <li class="header-li"><a href="#">Home</a></li>
+          <li class="header-li"><a href="/about-us.html">About Us</a></li>
+          <li class="header-li"><a href="#">Services
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.22532 8.33753L0.977857 4.09005C0.773006 3.8852 0.773006 3.55308 0.977857 3.34825L1.47326 2.85285C1.67776 2.64835 2.00919 2.64796 2.21418 2.85198L5.59622 6.21818L8.97825 2.85198C9.18323 2.64796 9.51467 2.64835 9.71917 2.85285L10.2146 3.34825C10.4194 3.5531 10.4194 3.88522 10.2146 4.09005L5.96713 8.33753C5.76228 8.54236 5.43017 8.54236 5.22532 8.33753Z"
+                  fill="white" />
+              </svg></a>
+          </li>
+          <li class="header-li"><a href="/master-classes.html">online matserclasses</a></li>
+          <li class="header-li"><a href="#">gallery</a></li>
+          <li class="header-li"><a href="#">faqs</a></li>
+        </ul>
+      </nav>
       <a class="btn header-btn" href="#">Contact Us</a>
+      <div class="hamburger-menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="4" width="24" height="2" fill="white" />
+          <rect y="11" width="24" height="2" fill="white" />
+          <rect y="18" width="24" height="2" fill="white" />
+        </svg>
+
+      </div>
     </div>
   </header>
   <main>
@@ -136,7 +146,7 @@
       </div>
       <div class="common-card">
         <h3 class="title common-card-title">Weight Loss Treatment Benefits</h3>
-        <div class="common-card-flex flex">
+        <div class="common-card-flex flex grid-2cols">
           <div class="common-card-flex-item">
             <div class="common-card-svg">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -277,7 +287,7 @@
   </main>
   <footer class="footer">
     <div class="container footer-content flex">
-      <div class="quick-links">
+      <div class="quick-links footer-flex-item">
         <h3 class="title footer-title">Quick links</h3>
         <ul>
           <li><a href="#">Home</a></li>
@@ -287,7 +297,7 @@
           <li><a href="#">Appointment</a></li>
         </ul>
       </div>
-      <div class="helpful-links">
+      <div class="helpful-links footer-flex-item">
         <h3 class="title footer-title">Helpful links</h3>
         <ul>
           <li><a href="#">FAQs</a></li>
@@ -296,7 +306,7 @@
           <li><a href="#">404 error</a></li>
         </ul>
       </div>
-      <div class="our-timings">
+      <div class="our-timings footer-flex-item">
         <h3 class="title footer-title">Our Timings</h3>
         <div class="our-timings-flex">
           <div>
@@ -359,7 +369,7 @@
         </div>
 
       </div>
-      <div class="contact-us">
+      <div class="contact-us footer-flex-item">
         <h3 class="title footer-title">Contact Us</h3>
         <ul>
           <li>
@@ -415,7 +425,8 @@
       </div>
       <div class="copyright-logo flex">
         <a href="#">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="copyright-svg" width="36" height="36" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="18" fill="url(#paint0_linear_370_681)" />
             <path
               d="M18.0022 13.9573C15.7663 13.9573 13.9628 15.7608 13.9628 17.9968C13.9628 20.2327 15.7663 22.0362 18.0022 22.0362C20.2382 22.0362 22.0417 20.2327 22.0417 17.9968C22.0417 15.7608 20.2382 13.9573 18.0022 13.9573ZM18.0022 20.6229C16.5573 20.6229 15.3761 19.4452 15.3761 17.9968C15.3761 16.5483 16.5538 15.3706 18.0022 15.3706C19.4507 15.3706 20.6284 16.5483 20.6284 17.9968C20.6284 19.4452 19.4472 20.6229 18.0022 20.6229ZM23.1491 13.7921C23.1491 14.3159 22.7272 14.7343 22.2069 14.7343C21.6831 14.7343 21.2647 14.3124 21.2647 13.7921C21.2647 13.2718 21.6866 12.8499 22.2069 12.8499C22.7272 12.8499 23.1491 13.2718 23.1491 13.7921ZM25.8245 14.7483C25.7647 13.4862 25.4765 12.3683 24.5519 11.4472C23.6308 10.5261 22.5128 10.2378 21.2507 10.1745C19.9499 10.1007 16.0511 10.1007 14.7503 10.1745C13.4917 10.2343 12.3737 10.5226 11.4491 11.4437C10.5245 12.3647 10.2397 13.4827 10.1765 14.7448C10.1026 16.0456 10.1026 19.9444 10.1765 21.2452C10.2362 22.5073 10.5245 23.6253 11.4491 24.5464C12.3737 25.4675 13.4882 25.7558 14.7503 25.819C16.0511 25.8929 19.9499 25.8929 21.2507 25.819C22.5128 25.7593 23.6308 25.471 24.5519 24.5464C25.4729 23.6253 25.7612 22.5073 25.8245 21.2452C25.8983 19.9444 25.8983 16.0491 25.8245 14.7483ZM24.144 22.6409C23.8698 23.33 23.339 23.8608 22.6464 24.1386C21.6093 24.5499 19.1483 24.455 18.0022 24.455C16.8562 24.455 14.3917 24.5464 13.3581 24.1386C12.669 23.8644 12.1382 23.3335 11.8604 22.6409C11.4491 21.6038 11.544 19.1429 11.544 17.9968C11.544 16.8507 11.4526 14.3862 11.8604 13.3526C12.1347 12.6636 12.6655 12.1327 13.3581 11.855C14.3952 11.4437 16.8562 11.5386 18.0022 11.5386C19.1483 11.5386 21.6128 11.4472 22.6464 11.855C23.3355 12.1292 23.8663 12.6601 24.144 13.3526C24.5554 14.3897 24.4604 16.8507 24.4604 17.9968C24.4604 19.1429 24.5554 21.6073 24.144 22.6409Z"
@@ -429,7 +440,8 @@
           </svg>
         </a>
         <a href="#">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="copyright-svg" width="36" height="36" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="18" fill="url(#paint0_linear_370_684)" />
             <path
               d="M26.7188 18C26.7188 13.1836 22.8164 9.28125 18 9.28125C13.1836 9.28125 9.28125 13.1836 9.28125 18C9.28125 22.3516 12.4696 25.9587 16.6377 26.6133V20.5204H14.4229V18H16.6377V16.0791C16.6377 13.8941 17.9385 12.6872 19.9308 12.6872C20.8849 12.6872 21.8827 12.8573 21.8827 12.8573V15.0019H20.783C19.7002 15.0019 19.3623 15.6741 19.3623 16.3635V18H21.7804L21.3936 20.5204H19.3623V26.6133C23.5304 25.9587 26.7188 22.3516 26.7188 18Z"
@@ -443,7 +455,8 @@
           </svg>
         </a>
         <a href="#">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="copyright-svg" width="36" height="36" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="18" fill="url(#paint0_linear_370_687)" />
             <path
               d="M25.1497 14.3338C25.1612 14.4937 25.1612 14.6536 25.1612 14.8135C25.1612 19.6904 21.4493 25.3097 14.665 25.3097C12.5749 25.3097 10.6333 24.7043 9 23.6536C9.29696 23.6879 9.58247 23.6993 9.89086 23.6993C11.6154 23.6993 13.203 23.1168 14.4708 22.1232C12.849 22.0889 11.4898 21.0267 11.0216 19.5648C11.25 19.599 11.4784 19.6219 11.7183 19.6219C12.0495 19.6219 12.3807 19.5762 12.6891 19.4963C10.9987 19.1536 9.73093 17.6688 9.73093 15.8757V15.83C10.222 16.1041 10.7931 16.2755 11.3984 16.2983C10.4048 15.6358 9.75379 14.5051 9.75379 13.2259C9.75379 12.5407 9.93649 11.9125 10.2563 11.3643C12.0723 13.6028 14.802 15.0647 17.8629 15.2247C17.8058 14.9506 17.7715 14.6651 17.7715 14.3795C17.7715 12.3465 19.4162 10.6904 21.4606 10.6904C22.5228 10.6904 23.4822 11.1359 24.156 11.8554C24.9898 11.6955 25.7893 11.3871 26.4974 10.9645C26.2233 11.8212 25.6408 12.5407 24.8756 12.9975C25.618 12.9176 26.3375 12.712 26.9999 12.4265C26.4975 13.1574 25.8693 13.8084 25.1497 14.3338Z"
@@ -457,7 +470,8 @@
           </svg>
         </a>
         <a href="#">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="copyright-svg" width="36" height="36" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="18" fill="url(#paint0_linear_370_690)" />
             <path
               d="M18.4219 9.22852C14.8148 9.22852 11.25 11.6332 11.25 15.525C11.25 18 12.6422 19.4062 13.4859 19.4062C13.834 19.4062 14.0344 18.4359 14.0344 18.1617C14.0344 17.8348 13.2012 17.1387 13.2012 15.7781C13.2012 12.9516 15.3527 10.9477 18.1371 10.9477C20.5312 10.9477 22.3031 12.3082 22.3031 14.8078C22.3031 16.6746 21.5543 20.1762 19.1285 20.1762C18.2531 20.1762 17.5043 19.5434 17.5043 18.6363C17.5043 17.3074 18.4324 16.0207 18.4324 14.6496C18.4324 12.3223 15.1313 12.7441 15.1313 15.5566C15.1313 16.1473 15.2051 16.8012 15.4688 17.3391C14.9836 19.4273 13.9922 22.5387 13.9922 24.6902C13.9922 25.3547 14.0871 26.0086 14.1504 26.673C14.2699 26.8066 14.2102 26.7926 14.393 26.7258C16.1648 24.3 16.1016 23.8254 16.9031 20.6508C17.3355 21.4734 18.4535 21.9164 19.3395 21.9164C23.073 21.9164 24.75 18.2777 24.75 14.9977C24.75 11.5066 21.7336 9.22852 18.4219 9.22852Z"
