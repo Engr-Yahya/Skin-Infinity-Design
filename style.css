@@ -28,6 +28,7 @@ a {
   max-width: 100%;
 }
 a {
+  color: #fff;
   text-decoration: none;
 }
 ul {
@@ -160,9 +161,32 @@ ul {
   width: fit-content;
   border-radius: 50%;
 }
+.common-page-testimonials {
+  padding: 150px 0px 226px !important;
+}
 .common-card-txt {
   margin-top: 20px;
   max-width: 140px;
+}
+.consultation {
+  background-color: #e6fdff;
+  position: relative;
+}
+.common-consultation {
+  padding: 100px 0px;
+  justify-content: space-between;
+}
+.consultation-content {
+  max-width: 455px;
+}
+.consultation-txt {
+  font-size: 20px;
+  margin: 20px 0px 40px;
+}
+.consultation-img {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
 }
 /* ///////////////////// Header Css //////////////////////////// */
 .header-content {
@@ -522,6 +546,81 @@ ul {
   align-items: center;
   gap: 10px;
   font-size: 26px;
+}
+
+/* ///////////////////// Footer Section ///////////////////////////// */
+footer {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.footer {
+  padding: 135px 0px 64px;
+}
+.footer-content {
+  align-items: start;
+  justify-content: space-between;
+}
+.footer-title {
+  font-size: 22px;
+  margin-bottom: 23px;
+}
+.footer ul li {
+  font-size: 18px;
+  padding: 11px 0px;
+}
+.footer ul li a:hover,
+.our-timings span:hover {
+  cursor: pointer;
+  color: #44a1a8;
+}
+.our-timings span {
+  font-size: 18px;
+  padding: 11px 0px;
+  display: block;
+  position: relative;
+}
+.our-timings span:last-child::after {
+  display: none;
+}
+.our-timings span::after {
+  content: "";
+  background-color: rgb(255, 255, 255, 0.12);
+  display: flex;
+  height: 1px;
+  width: 310px;
+  position: absolute;
+  bottom: 0;
+}
+.our-timings-flex {
+  display: flex;
+  gap: 12px;
+}
+.our-timings ul li:last-child {
+  border-bottom: none;
+}
+.our-timings ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-us ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.copyright-content {
+  font-size: 18px;
+}
+.copyright-content span {
+  color: #44a1a8;
+}
+.copyright-flex {
+  justify-content: space-between;
+  padding: 24px 0px 52px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.copyright-logo {
+  gap: 8px;
 }
 /* ///////////////////// About Us Page ///////////////////////////// */
 .Aboutus-content,
