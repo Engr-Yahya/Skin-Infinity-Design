@@ -727,7 +727,77 @@ footer {
 .training-svg {
   margin-right: 8px;
 }
-/* ///////////////////// Master Classes Page ///////////////////////////// */
+/* ///////////////////// FAQ Page ///////////////////////////// */
+.faq-page-container {
+  padding: 120px 0px 150px;
+  text-align: center;
+}
+.faq-title {
+  margin: 10px 0px 18px;
+}
+.faq-txt {
+  font-size: 18px;
+}
+.page-accordion-container {
+  margin-top: 80px;
+  text-align: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.page-accordion-item {
+  max-width: 590px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.page-accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 28px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.page-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.page-accordion-content p {
+  font-size: 14px;
+  padding: 9px 30px;
+  margin: 0;
+}
+
+.accordion-icon {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+.page-accordion-item.active .page-accordion-header {
+  background-color: #176478;
+  color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+/* Active state */
+.page-accordion-item.active .page-accordion-content {
+  max-height: 300px; /* adjust if content is large */
+}
+
+.page-accordion-item.active .accordion-icon {
+  transform: rotate(180deg); /* + becomes × */
+}
+
+/* ///////////////////// Media Queries ///////////////////////////// */
 @media only screen and (max-width: 1200px) {
   .header-img {
     width: 200px;
