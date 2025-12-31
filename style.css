@@ -211,6 +211,9 @@ ul {
   color: inherit;
   font-weight: 600;
 }
+.header-services {
+  gap: 10px;
+}
 .hamburger-menu {
   display: none;
 }
@@ -222,9 +225,7 @@ ul {
   padding: 171px 0px 120px;
 }
 .hero-container {
-  gap: 85px;
-  max-width: 1260px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 .hero-content {
   max-width: 594px;
@@ -269,6 +270,7 @@ ul {
   text-align: center;
 }
 .about-content {
+  max-width: 1300px;
   margin: 120px auto;
   text-align: center;
 }
@@ -646,6 +648,9 @@ footer {
   padding: 100px 0px;
   text-align: center;
 }
+.ourteam-content {
+  max-width: 1150px;
+}
 .ourteam-txt {
   max-width: 610px;
   font-size: 18px;
@@ -800,6 +805,7 @@ footer {
 }
 /* ///////////////////// Aftercare page ///////////////////////////// */
 .glow-title {
+  max-width: 590px;
   margin: 10px 0px 20px;
 }
 .glow-txt {
@@ -817,6 +823,49 @@ footer {
   max-width: 446px;
   font-size: 18px;
   line-height: 1.4;
+}
+.priority-btn {
+  margin-top: 40px;
+}
+/* ///////////////////// LUMIFIT Page ///////////////////////////// */
+.lumifit.page-hero-content {
+  max-width: 970px;
+}
+.lumifit-experience.About-experience {
+  padding: 120px 0px;
+}
+.lumifit-card.experience-card {
+  margin-left: -245px;
+}
+.partnership-title {
+  max-width: 525px;
+  line-height: 1.5;
+}
+.partnership-txt {
+  max-width: 530px;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.lumifit-founder.common-consultation {
+  padding: 0px 20px;
+}
+.lumifit-founder-img {
+  position: unset;
+  margin-top: -80px;
+}
+.lumifit-founder-content {
+  align-items: start;
+  max-width: 650px;
+  gap: 17px;
+}
+.lumifit-founder-title {
+  font-size: 26px;
+}
+.lumifit-founder-txt {
+  margin: 20px 0px;
+  font-size: 26px;
+  max-width: 600px;
 }
 /* ///////////////////// Media Queries ///////////////////////////// */
 @media only screen and (max-width: 1200px) {

@@ -49,7 +49,7 @@
   </header>
   <main>
     <section class="hero">
-      <div class="hero-container flex">
+      <div class="content-container hero-container flex">
         <div class="hero-content">
           <h1 class="hero-title">Refine Your Radiant Skin with Skinfinity Aesthetics</h1>
           <p class="hero-detail">Premium skin treatments and professional aesthetics training – book now in Liverpool
@@ -677,5 +677,20 @@
     </div>
   </footer>
 </body>
+<script>
+  const accordionHeaders = document.querySelectorAll('.page-accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+
+      document.querySelectorAll('.page-accordion-item').forEach(acc => {
+        if (acc !== item) acc.classList.remove('active');
+      });
+
+      item.classList.toggle('active');
+    });
+  });
+</script>
 
 </html>
