@@ -728,7 +728,7 @@ footer {
   margin-right: 8px;
 }
 /* ///////////////////// FAQ Page ///////////////////////////// */
-.faq-page-container {
+.page-container {
   padding: 120px 0px 150px;
   text-align: center;
 }
@@ -744,14 +744,20 @@ footer {
   align-items: start;
   gap: 20px;
 }
-
+.aftercare-accordion-container {
+  max-width: 1320px;
+  margin: 80px auto 0px;
+  gap: 40px;
+}
+.aftercare-accordion-container .page-accordion-content p {
+  padding: 16px 30px;
+}
 .page-accordion-item {
   max-width: 590px;
   border: 1px solid #ddd;
   border-radius: 12px;
   margin-bottom: 15px;
 }
-
 .page-accordion-header {
   width: 100%;
   background: none;
@@ -765,13 +771,11 @@ footer {
   align-items: center;
   transition: 0.3s;
 }
-
 .page-accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease;
 }
-
 .page-accordion-content p {
   font-size: 14px;
   padding: 9px 30px;
@@ -788,15 +792,32 @@ footer {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-/* Active state */
 .page-accordion-item.active .page-accordion-content {
-  max-height: 300px; /* adjust if content is large */
+  max-height: 300px;
 }
-
 .page-accordion-item.active .accordion-icon {
-  transform: rotate(180deg); /* + becomes × */
+  transform: rotate(180deg);
 }
-
+/* ///////////////////// Aftercare page ///////////////////////////// */
+.glow-title {
+  margin: 10px 0px 20px;
+}
+.glow-txt {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.priority-flex {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  justify-content: space-between;
+}
+.priority-detail {
+  margin-top: 20px;
+  max-width: 446px;
+  font-size: 18px;
+  line-height: 1.4;
+}
 /* ///////////////////// Media Queries ///////////////////////////// */
 @media only screen and (max-width: 1200px) {
   .header-img {
