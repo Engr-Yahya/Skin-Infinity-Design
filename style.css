@@ -270,7 +270,7 @@ ul {
   text-align: center;
 }
 .about-content {
-  max-width: 1300px;
+  max-width: 1340px;
   margin: 120px auto;
   text-align: center;
 }
@@ -287,7 +287,7 @@ ul {
 .about-flex-card {
   align-items: stretch;
   justify-content: space-between;
-  margin-top: 75px;
+  margin: 75px 20px 0px;
 }
 .about-flex-card-item1,
 .about-flex-card-item2 {
@@ -402,6 +402,9 @@ ul {
   color: #fff;
   transform: scale(1.1);
 }
+.service-section {
+  padding: 0px 20px;
+}
 .service-card {
   max-width: 1300px;
   margin: 0 auto;
@@ -435,6 +438,7 @@ ul {
   align-self: end;
 }
 .service-card-img {
+  object-fit: cover;
   align-self: stretch;
 }
 /* ///////////////////// Testimonials Section //////////////////////////// */
@@ -451,6 +455,7 @@ ul {
   font-size: 18px;
 }
 .clients {
+  align-items: stretch;
   margin: 50px 0px 40px;
   gap: 25px;
 }
@@ -481,7 +486,7 @@ ul {
 /* ///////////////////// Our Offer Section //////////////////////////// */
 .our-offer {
   background-color: rgba(68, 161, 168, 0.13);
-  padding: 110px 0px;
+  padding: 110px 20px;
 }
 .offer-container {
   padding: 80px 72px 80px 156px;
@@ -492,6 +497,9 @@ ul {
   margin-bottom: 40px;
 }
 /* ///////////////////// FAQ'S Section //////////////////////////// */
+.experience-section {
+  padding: 0 20px;
+}
 .experience {
   max-width: 1130px;
   margin: 150px auto;
@@ -746,11 +754,16 @@ footer {
 .page-accordion-container {
   margin-top: 80px;
   text-align: start;
-  align-items: start;
+  align-items: center;
   gap: 20px;
+}
+.treatment-img {
+  object-fit: cover;
+  border-radius: 16px;
 }
 .aftercare-accordion-container {
   max-width: 1320px;
+  padding: 0px 20px;
   margin: 80px auto 0px;
   gap: 40px;
 }
@@ -868,6 +881,47 @@ footer {
   max-width: 600px;
 }
 /* ///////////////////// Media Queries ///////////////////////////// */
+@media only screen and (max-width: 1366px) {
+  .hero-img {
+    width: clamp(280px, 45vw, 540px);
+  }
+  .about-card {
+    margin: -60px 20px 0px;
+  }
+  .course {
+    padding: 90px 20px;
+  }
+  .course-container {
+    gap: 20px;
+  }
+  .course-title {
+    font-size: 34px;
+  }
+  .course-img {
+    width: clamp(320px, 45vw, 613px);
+  }
+  .service-card {
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .offer-img {
+    width: clamp(350px, 50vw, 725px);
+  }
+  .page-accordion-container {
+    justify-content: center;
+  }
+  .treatment-img,
+  .experience-img {
+    width: clamp(280px, 45vw, 673px);
+  }
+  .experience-card {
+    width: clamp(280px, 42vw, 673px);
+    padding: 45px;
+  }
+  .experience-content {
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .header-img {
     width: 200px;
@@ -878,6 +932,41 @@ footer {
   .header-btn {
     font-size: 12px;
     /* padding: 10px 20px; */
+  }
+  .hero-content {
+    width: clamp(260px, 50vw, 540px);
+  }
+  .hero-title {
+    font-size: 42px;
+  }
+  .about-card {
+    padding: 50px 100px;
+  }
+  .about-card-svg {
+    padding: 18px;
+  }
+  .course-container {
+    padding-left: 40px;
+  }
+  .service-card-content {
+    padding: 50px 0px 0px 60px;
+  }
+  .service-card-img {
+    width: clamp(280px, 45vw, 640px);
+  }
+  .service-med-img {
+    width: clamp(200px, 30vw, 353px);
+  }
+  .experience-card {
+    padding: 25px;
+  }
+  .experience-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .experience-btn {
+    margin-top: -10px;
+    font-size: 14px;
   }
   .footer ul li a,
   .footer span,
@@ -893,6 +982,21 @@ footer {
   .page-common-txt {
     font-size: 18px;
     max-width: 415px;
+  }
+  .aftercare-accordion-container {
+    gap: 20px;
+  }
+  .page-accordion-header {
+    padding: 20px 30px;
+  }
+  .service-grid {
+    column-gap: 20px;
+  }
+  .service-img-content {
+    padding: 0 14px;
+  }
+  .offer-container {
+    padding: 60px 42px 60px 80px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -915,11 +1019,30 @@ footer {
   .page-detail {
     font-size: 18px;
   }
+  .title {
+    font-size: 32px;
+  }
+  .service-card-txt {
+    font-size: 18px;
+    max-width: 400px;
+  }
   .page-common-container {
     gap: 10px;
   }
   .page-common-img {
     width: clamp(280px, 50vw, 520px);
+  }
+  .course-container {
+    padding-left: 20px;
+  }
+  .course-title {
+    font-size: 30px;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-img-content {
+    padding: 0 25px;
   }
   .duration-flex p,
   .price-flex p {
@@ -935,6 +1058,9 @@ footer {
   .client-name {
     font-size: 24px;
   }
+  .client-card-detail {
+    font-size: 14px;
+  }
   .consultation-txt {
     font-size: 18px;
   }
@@ -943,6 +1069,9 @@ footer {
   }
   .common-page-testimonials {
     padding: 150px 0px 140px !important;
+  }
+  .page-accordion-header {
+    font-size: 14px;
   }
   .footer-flex-item {
     padding: 0px 20px;
@@ -955,6 +1084,60 @@ footer {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 990px) {
+  .hero-title {
+    font-size: 38px;
+  }
+  .hero-detail {
+    font-size: 18px;
+  }
+  .about-card-svg svg {
+    width: 40px;
+    height: 40px;
+  }
+  .service-card-content {
+    padding: 20px 0px 0px 30px;
+  }
+  .service-card-title {
+    max-width: 400px;
+    font-size: 28px;
+  }
+  .offer-container {
+    padding: 30px 24px 30px 40px;
+  }
+  .page-accordion-container {
+    gap: 50px;
+    flex-direction: column;
+  }
+  .accordion-flex-item {
+    width: 100%;
+    max-width: 100%;
+  }
+  .page-accordion-item {
+    max-width: 100%;
+  }
+  .page-accordion-header {
+    padding: 28px 30px;
+    font-size: 18px;
+  }
+  .treatment-img {
+    width: 85%;
+  }
+  .experience-content {
+    justify-content: start;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .experience-img {
+    width: 85%;
+  }
+  .experience-card {
+    margin-left: 0px;
+    padding: 75px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 880px) {
   header nav {
     display: none;
@@ -964,6 +1147,16 @@ footer {
   }
   .hamburger-menu {
     display: block;
+  }
+  .hero-title {
+    font-size: 33px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .about-card-content {
+    display: grid;
+    row-gap: 40px;
   }
   .page-detail {
     max-width: 594px;
@@ -976,6 +1169,13 @@ footer {
     font-size: 16px;
   }
   .page-flex-btn {
+    font-size: 14px;
+  }
+  .course-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .course-btn {
     font-size: 14px;
   }
   .test-title {
@@ -1001,6 +1201,18 @@ footer {
     width: clamp(280px, 50vw, 520px);
     position: unset;
     margin-top: -74px;
+  }
+  .service-card-txt {
+    margin-bottom: 36px;
+  }
+  .service-card-btn {
+    font-size: 14px;
+  }
+  .clients-grid {
+    display: grid;
+  }
+  .clients.clients-grid {
+    gap: 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1038,6 +1250,12 @@ footer {
   .clients {
     flex-direction: column;
     align-items: start;
+  }
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
+  .clients-grid .client-card {
+    margin-bottom: 40px;
   }
   .client-img {
     width: 64px;
