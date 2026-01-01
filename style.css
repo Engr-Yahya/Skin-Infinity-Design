@@ -828,14 +828,18 @@ footer {
 .priority-flex {
   max-width: 1150px;
   margin: 0 auto;
-  padding-bottom: 150px;
+  padding: 0px 20px 150px;
   justify-content: space-between;
+  gap: 20px;
 }
 .priority-detail {
   margin-top: 20px;
   max-width: 446px;
   font-size: 18px;
   line-height: 1.4;
+}
+.priority-detail:last-child {
+  margin-top: 0px;
 }
 .priority-btn {
   margin-top: 40px;
@@ -928,6 +932,12 @@ footer {
   .about-ring-2 {
     width: 57%;
   }
+  .About-experience .experience-card {
+    padding: 34px 25px;
+  }
+  .About-experience .experience-detail {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .header-img {
@@ -1008,6 +1018,9 @@ footer {
   .about-detail {
     max-width: 650px;
     font-size: 22px;
+  }
+  .priority-img {
+    width: clamp(280px, 40vw, 517px);
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1247,7 +1260,8 @@ footer {
   .test-title {
     font-size: 30px;
   }
-  .test-txt {
+  .test-txt,
+  .priority-detail {
     font-size: 16px;
   }
   .client-img {
@@ -1284,7 +1298,8 @@ footer {
   .about-flex-card-item2 {
     max-height: 310px;
   }
-  .about-flex-card-title {
+  .about-flex-card-title,
+  .priority-title {
     font-size: 24px;
   }
   .about-flex-card-txt {
