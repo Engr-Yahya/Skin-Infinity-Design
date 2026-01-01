@@ -574,7 +574,7 @@ footer {
   align-items: start;
   justify-content: space-between;
 }
-.footer-title {
+.footer .footer-title {
   font-size: 22px;
   margin-bottom: 23px;
 }
@@ -1073,6 +1073,12 @@ footer {
   .page-accordion-header {
     font-size: 14px;
   }
+  .community-btn {
+    font-size: 20px;
+  }
+  .community-btn > svg {
+    width: 20px;
+  }
   .footer-flex-item {
     padding: 0px 20px;
   }
@@ -1137,6 +1143,17 @@ footer {
     max-width: 100%;
     width: 100%;
   }
+  .newsletter {
+    padding: 60px 0px;
+  }
+  .newsletter-flex {
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+  }
+  .community-content {
+    align-self: end;
+  }
 }
 @media only screen and (max-width: 880px) {
   header nav {
@@ -1153,6 +1170,9 @@ footer {
   }
   .btn {
     font-size: 14px;
+  }
+  .hero {
+    padding: 120px 0px 60px;
   }
   .about-card-content {
     display: grid;
@@ -1174,6 +1194,9 @@ footer {
   .course-title {
     font-size: 26px;
     margin-bottom: 30px;
+  }
+  .offer-title {
+    font-size: 28px;
   }
   .course-btn {
     font-size: 14px;
@@ -1215,7 +1238,21 @@ footer {
     gap: 0;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero-content {
+    align-self: start;
+    width: 100%;
+  }
+  .hero-img {
+    width: 65%;
+  }
+  .about-card {
+    margin-top: 40px;
+  }
   .page-title {
     font-size: 38px;
   }
@@ -1247,6 +1284,46 @@ footer {
     justify-content: start;
     gap: 40px;
   }
+  .course {
+    padding: 60px 20px;
+  }
+  .course-container {
+    padding: 20px 30px;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 16px;
+  }
+  .course-content {
+    align-self: start;
+  }
+  .course-img {
+    border-radius: 12px;
+    width: 60%;
+  }
+  .services {
+    margin: 80px 0px;
+  }
+  .service-card {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .service-card-content {
+    align-self: start;
+    flex-direction: row;
+  }
+  .service-med-img {
+    width: 45%;
+  }
+  .service-card-title {
+    font-size: 24px;
+  }
+  .service-card-img {
+    width: 100%;
+    max-height: clamp(240px, 40vw, 400px);
+  }
+  .testimonials {
+    padding: 80px 0px;
+  }
   .clients {
     flex-direction: column;
     align-items: start;
@@ -1274,6 +1351,16 @@ footer {
   .test-btn {
     font-size: 12px;
   }
+  .service-img-content {
+    padding: 0px 8px;
+  }
+  .service-grid-txt {
+    font-size: 16px;
+  }
+  .service-grid-btn > svg {
+    width: 12px;
+    height: 12px;
+  }
   .consultation-title {
     font-size: 20px;
   }
@@ -1287,9 +1374,9 @@ footer {
   .copyright-content {
     font-size: 12px;
   }
-  .copyright-logo {
+  /* .copyright-logo {
     gap: 0px;
-  }
+  } */
   .copyright-svg {
     height: 25px;
   }
@@ -1316,5 +1403,18 @@ footer {
   .consultation-img {
     align-self: center;
     margin-top: 0px;
+  }
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-img-content {
+    padding: 0px 25px;
+  }
+  .service-grid-txt {
+    font-size: 22px;
+  }
+  .service-grid-btn > svg {
+    width: 15px;
+    height: 15px;
   }
 }
