@@ -582,8 +582,8 @@ footer {
   font-size: 18px;
   padding: 11px 0px;
 }
-.footer ul li a:hover,
-.our-timings span:hover {
+.helpful-links ul li a:hover,
+.quick-links ul li a:hover {
   cursor: pointer;
   color: #44a1a8;
 }
@@ -921,6 +921,13 @@ footer {
   .experience-content {
     justify-content: center;
   }
+  .about-flex-img-1,
+  .about-flex-img-2 {
+    width: 43.5%;
+  }
+  .about-ring-2 {
+    width: 57%;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .header-img {
@@ -960,7 +967,7 @@ footer {
   .experience-card {
     padding: 25px;
   }
-  .experience-title {
+  .experience-card .experience-title {
     font-size: 28px;
     margin-bottom: 20px;
   }
@@ -998,6 +1005,10 @@ footer {
   .offer-container {
     padding: 60px 42px 60px 80px;
   }
+  .about-detail {
+    max-width: 650px;
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .header-img {
@@ -1012,6 +1023,9 @@ footer {
   .header-btn {
     font-size: 12px;
     padding: 12px 24px;
+  }
+  .page-container {
+    padding: 80px 0px;
   }
   .page-title {
     font-size: 48px;
@@ -1061,6 +1075,14 @@ footer {
   .client-card-detail {
     font-size: 14px;
   }
+  .about-flex-card-item1,
+  .about-flex-card-item2 {
+    max-height: 350px;
+    padding: 30px 0 0 30px;
+  }
+  .about-ring-2 {
+    width: 62%;
+  }
   .consultation-txt {
     font-size: 18px;
   }
@@ -1089,6 +1111,9 @@ footer {
   .copyright-content {
     font-size: 16px;
   }
+  .footer {
+    padding: 80px 0px 64px;
+  }
 }
 @media only screen and (max-width: 990px) {
   .hero-title {
@@ -1097,9 +1122,15 @@ footer {
   .hero-detail {
     font-size: 18px;
   }
+  .about-content {
+    margin: 60px auto;
+  }
   .about-card-svg svg {
     width: 40px;
     height: 40px;
+  }
+  .about-ring-1 {
+    width: 57%;
   }
   .service-card-content {
     padding: 20px 0px 0px 30px;
@@ -1129,6 +1160,9 @@ footer {
   .treatment-img {
     width: 85%;
   }
+  .experience {
+    margin: 80px auto;
+  }
   .experience-content {
     justify-content: start;
     flex-direction: column-reverse;
@@ -1139,9 +1173,12 @@ footer {
   }
   .experience-card {
     margin-left: 0px;
-    padding: 75px;
+    padding: 30px;
     max-width: 100%;
-    width: 100%;
+    width: 86%;
+  }
+  .experience-title {
+    max-width: 450px;
   }
   .newsletter {
     padding: 60px 0px;
@@ -1149,10 +1186,13 @@ footer {
   .newsletter-flex {
     flex-direction: column;
     align-items: start;
-    gap: 40px;
+    gap: 80px;
   }
   .community-content {
-    align-self: end;
+    align-self: center;
+  }
+  .community-btn {
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 880px) {
@@ -1174,6 +1214,9 @@ footer {
   .hero {
     padding: 120px 0px 60px;
   }
+  .about-card {
+    margin: 40px 20px 0px;
+  }
   .about-card-content {
     display: grid;
     row-gap: 40px;
@@ -1192,7 +1235,7 @@ footer {
     font-size: 14px;
   }
   .course-title {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 30px;
   }
   .offer-title {
@@ -1236,6 +1279,19 @@ footer {
   }
   .clients.clients-grid {
     gap: 0;
+  }
+  .about-flex-card-item1,
+  .about-flex-card-item2 {
+    max-height: 310px;
+  }
+  .about-flex-card-title {
+    font-size: 24px;
+  }
+  .about-flex-card-txt {
+    font-size: 14px;
+  }
+  .about-flex-card-btn {
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1298,7 +1354,7 @@ footer {
   }
   .course-img {
     border-radius: 12px;
-    width: 60%;
+    width: 65%;
   }
   .services {
     margin: 80px 0px;
@@ -1323,6 +1379,63 @@ footer {
   }
   .testimonials {
     padding: 80px 0px;
+  }
+  /* .about-flex-img-1,
+  .about-flex-img-2 {
+    width: 44%;
+  } */
+  .about-detail {
+    font-size: 18px;
+  }
+  .about-flex-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .about-card-txt {
+    font-size: 14px;
+  }
+  .about-flex-card-item1,
+  .about-flex-card-item2 {
+    max-height: 400px;
+    width: 100%;
+  }
+  .about-card-item {
+    gap: 10px;
+  }
+  .about-flex-card-title {
+    font-size: 32px;
+  }
+  .about-flex-card-txt {
+    font-size: 16px;
+  }
+  .about-flex-card-btn {
+    font-size: 14px;
+  }
+  .about-flex-img-1,
+  .about-flex-img-2 {
+    width: 45%;
+  }
+  .about-ring-1 {
+    width: 40%;
+  }
+  .our-offer {
+    padding: 60px 20px;
+  }
+  .offer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .offer-content {
+    align-self: start;
+  }
+  .offer-title {
+    max-width: 450px;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .offer-img {
+    width: 75%;
   }
   .clients {
     flex-direction: column;
@@ -1361,6 +1474,9 @@ footer {
     width: 12px;
     height: 12px;
   }
+  .page-accordion-header {
+    font-size: 16px;
+  }
   .consultation-title {
     font-size: 20px;
   }
@@ -1382,6 +1498,9 @@ footer {
   }
 }
 @media only screen and (max-width: 567px) {
+  .hero-title {
+    font-size: 28px;
+  }
   .page-title {
     font-size: 28px;
   }
@@ -1408,7 +1527,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .service-img-content {
-    padding: 0px 25px;
+    padding: 0px 14px;
   }
   .service-grid-txt {
     font-size: 22px;
@@ -1416,5 +1535,35 @@ footer {
   .service-grid-btn > svg {
     width: 15px;
     height: 15px;
+  }
+  .about-card {
+    padding: 20px;
+  }
+  .service-med-img {
+    display: none;
+  }
+  .about-flex-card-item1,
+  .about-flex-card-item2 {
+    width: 100%;
+    max-height: 50vh;
+  }
+  .about-flex-card-title {
+    font-size: 22px;
+  }
+  .about-flex-card-txt {
+    max-width: 220px;
+  }
+  .about-flex-card-btn {
+    font-size: 12px;
+  }
+  .about-ring-1 {
+    width: 52%;
+  }
+  .newsletter-title {
+    max-width: 300px;
+    font-size: 24px;
+  }
+  .newsletter-content input {
+    margin-bottom: 25px;
   }
 }
