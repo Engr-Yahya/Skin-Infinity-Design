@@ -640,7 +640,7 @@ footer {
 .Aboutus-content,
 .master-content {
   max-width: 865px;
-  padding: 231px 0px 120px;
+  padding: 231px 20px 120px;
 }
 .About-experience .experience-card {
   padding: 42px 50px;
@@ -666,7 +666,9 @@ footer {
   margin: 20px auto 60px;
 }
 .ourteam-flex {
-  justify-content: space-between;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: center;
 }
 .ourteam-img1 {
   background-image: url(/assets/png/ourteam-img1.png);
@@ -677,10 +679,12 @@ footer {
 .ourteam-img1,
 .ourteam-img2 {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  border-radius: 12px;
   height: 630px;
   width: 550px;
+  object-fit: contain;
   display: flex;
   align-items: end;
 }
@@ -691,7 +695,7 @@ footer {
   color: #fff;
   flex: 1;
 }
-.ourteam-img-title {
+.ourteam-img-content .ourteam-img-title {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -705,6 +709,7 @@ footer {
 }
 .certification {
   max-width: 930px;
+  padding: 0px 20px;
   margin: 150px auto;
   text-align: center;
 }
@@ -716,12 +721,14 @@ footer {
 }
 .certification-logos {
   margin-top: 60px;
-  justify-content: space-between;
+  gap: 10px;
+  justify-content: space-evenly;
 }
 /* ///////////////////// Master Classes Page ///////////////////////////// */
 .training {
   margin: 135px auto 155px;
   justify-content: space-between;
+  gap: 20px;
 }
 .training-txt {
   margin: 20px 0px 30px;
@@ -729,7 +736,7 @@ footer {
   max-width: 475px;
   line-height: 1.5;
 }
-.training-list {
+.training .training-list {
   font-size: 20px;
   color: #176478;
   margin-bottom: 14px;
@@ -802,6 +809,7 @@ footer {
 
 .accordion-icon {
   font-size: 22px;
+  transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
 .page-accordion-item.active .page-accordion-header {
@@ -814,7 +822,7 @@ footer {
   max-height: 300px;
 }
 .page-accordion-item.active .accordion-icon {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 /* ///////////////////// Aftercare page ///////////////////////////// */
 .glow-title {
@@ -974,6 +982,11 @@ footer {
   .service-med-img {
     width: clamp(200px, 30vw, 353px);
   }
+  .lumifit-card.experience-card,
+  .About-experience .experience-card {
+    margin-left: 0px;
+    width: clamp(280px, 50vw, 673px);
+  }
   .experience-card {
     padding: 25px;
   }
@@ -1022,6 +1035,11 @@ footer {
   .priority-img {
     width: clamp(280px, 40vw, 517px);
   }
+  .ourteam-img1,
+  .ourteam-img2 {
+    width: clamp(280px, 45vw, 550px);
+    height: 500px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .header-img {
@@ -1056,7 +1074,8 @@ footer {
   .page-common-container {
     gap: 10px;
   }
-  .page-common-img {
+  .page-common-img,
+  .training-img {
     width: clamp(280px, 50vw, 520px);
   }
   .course-container {
@@ -1108,6 +1127,9 @@ footer {
   .page-accordion-header {
     font-size: 14px;
   }
+  .certification {
+    margin: 80px auto;
+  }
   .community-btn {
     font-size: 20px;
   }
@@ -1121,14 +1143,49 @@ footer {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .copyright-content {
+  .copyright-content,
+  .training-txt {
     font-size: 16px;
   }
   .footer {
     padding: 80px 0px 64px;
   }
+  .ourteam-img1,
+  .ourteam-img2 {
+    height: 450px;
+  }
+  .ourteam-img-content {
+    padding: 0px 20px 30px 20px;
+  }
+  .ourteam-img-content .ourteam-img-title {
+    font-size: 24px;
+  }
+  .ourteam-img-content .ourteam-img-rank {
+    font-size: 18px;
+  }
+  .training {
+    margin: 80px auto;
+  }
+  .partnership-content {
+    padding: 20px 0px 20px 10px;
+  }
+  .partnership-title {
+    font-size: 24px;
+  }
+  .partnership-txt {
+    font-size: 16px;
+  }
+  .partnership-img {
+    object-fit: cover;
+    align-self: stretch;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
 }
 @media only screen and (max-width: 990px) {
+  .header-ul {
+    gap: 18px;
+  }
   .hero-title {
     font-size: 38px;
   }
@@ -1184,6 +1241,9 @@ footer {
   .experience-img {
     width: 85%;
   }
+  .About-experience .experience-card {
+    width: 86%;
+  }
   .experience-card {
     margin-left: 0px;
     padding: 30px;
@@ -1206,6 +1266,9 @@ footer {
   }
   .community-btn {
     margin: 0 auto;
+  }
+  .faq-accordion {
+    gap: 0px;
   }
 }
 @media only screen and (max-width: 880px) {
@@ -1234,11 +1297,18 @@ footer {
     display: grid;
     row-gap: 40px;
   }
+  .page-section {
+    height: 450px;
+  }
+  .page-hero-content {
+    padding: 170px 16px 0px;
+  }
   .page-detail {
     max-width: 594px;
     margin: 0 auto;
   }
-  .page-common-title {
+  .page-common-title,
+  .training-title {
     font-size: 24px;
   }
   .page-common-txt {
@@ -1267,7 +1337,8 @@ footer {
   .client-img {
     width: 50px;
   }
-  .client-name {
+  .client-name,
+  .training-list {
     font-size: 18px;
   }
   .date {
@@ -1307,6 +1378,9 @@ footer {
   }
   .about-flex-card-btn {
     font-size: 12px;
+  }
+  .certification-logos {
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1367,14 +1441,16 @@ footer {
   .course-content {
     align-self: start;
   }
-  .course-img {
+  .course-img,
+  .priority-img {
     border-radius: 12px;
     width: 65%;
   }
   .services {
     margin: 80px 0px;
   }
-  .service-card {
+  .service-card,
+  .training {
     flex-direction: column;
     gap: 30px;
   }
@@ -1391,6 +1467,25 @@ footer {
   .service-card-img {
     width: 100%;
     max-height: clamp(240px, 40vw, 400px);
+  }
+  .training-content {
+    align-self: start;
+  }
+  .training-txt {
+    max-width: 100%;
+  }
+  .training-img {
+    width: 65%;
+  }
+  .priority-flex {
+    flex-direction: column-reverse;
+  }
+  .flex-priority-content {
+    align-self: start;
+  }
+  .priority-detail {
+    max-width: 100%;
+    font-size: 18px;
   }
   .testimonials {
     padding: 80px 0px;
@@ -1505,11 +1600,21 @@ footer {
   .copyright-content {
     font-size: 12px;
   }
-  /* .copyright-logo {
-    gap: 0px;
-  } */
+  .copyright-logo > svg {
+    width: 28px;
+  }
   .copyright-svg {
     height: 25px;
+  }
+  .ourteam-img1,
+  .ourteam-img2 {
+    height: 400px;
+  }
+  .ourteam-img-svg {
+    width: 30px;
+  }
+  .partnership-img {
+    align-self: center;
   }
 }
 @media only screen and (max-width: 567px) {
@@ -1580,5 +1685,20 @@ footer {
   }
   .newsletter-content input {
     margin-bottom: 25px;
+  }
+  .partnership-img {
+    width: 85%;
+  }
+  .ourteam-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ourteam-img1,
+  .ourteam-img2 {
+    width: 80%;
+    height: 450px;
+  }
+  .training-img {
+    width: 75%;
   }
 }
